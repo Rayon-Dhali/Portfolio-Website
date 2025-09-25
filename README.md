@@ -1,2 +1,8 @@
-# Portfolio-Website
-Personal portfolio website built with HTML and CSS to showcase projects, experience, skills, and mindset. Deployed using GitHub Pages for easy access and sharing.
+<img width="1911" height="1028" alt="image" src="https://github.com/user-attachments/assets/8b28a10d-4bbd-4374-8cdf-c8fae089f36d" />
+<img width="1916" height="1032" alt="image" src="https://github.com/user-attachments/assets/30f33da4-0501-4885-a9e7-01473cfccec0" />
+<img width="1916" height="1026" alt="image" src="https://github.com/user-attachments/assets/5c7b58bf-f7cf-4599-b134-6aba0e2b5b1a" />
+<img width="1919" height="1026" alt="image" src="https://github.com/user-attachments/assets/f3643196-8f0c-4596-9801-a047d409300f" />
+
+
+
+
