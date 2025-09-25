@@ -1,0 +1,248 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Fonts & Body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+.navbar-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover {
+  color: #007bff;
+}
+
+
+/* Projects Section */
+.projects {
+  padding: 6rem 2rem 4rem;
+}
+.projects-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.project-card {
+  text-align: center;
+}
+.project-img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Keeps boxes square */
+  background: #f0f0f0;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+.project-card h3 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+/* Work Experience */
+.work-experience {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.work-experience h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.work-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.work-img {
+  width: 80px;
+  height: 80px;
+  background: #f0f0f0;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+}
+.work-details h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.work-details h3 span {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 0.5rem;
+}
+.work-details ul {
+  list-style-type: disc;
+  margin-left: 1.2rem;
+}
+.work-details ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+
+/* Technical Skills Section */
+#skills {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#skills h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#skills h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+}
+
+#skills ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  color: #444;
+}
+
+#skills li {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+
+/* Mindset Section Formatting */
+#mindset {
+  padding: 4rem 2rem;
+  max-width: 900px;   /* Keeps it aligned like Skills */
+  margin: 0 auto;     /* Centers it horizontally */
+  line-height: 1.7;   /* Improves readability */
+}
+
+#mindset h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-align: center; /* Headings consistent */
+}
+
+#mindset h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+}
+
+#mindset p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+
+/* Project images - consistent square size */
+.project-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* ensures perfect square */
+  object-fit: cover;     /* crops edges so it fills nicely */
+  border-radius: 10px;   /* smooth corners */
+  border: 1px solid #eaeaea; /* light border for consistency */
+}
+
+.work-img img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;   /* crops to fit square */
+  border-radius: 6px;  /* matches placeholder style */
+  border: 1px solid #eaeaea;
+}
+
+
+/* Project Links */
+.project-card a {
+  text-decoration: none;   /* removes underline */
+  color: #000;             /* keeps text black */
+  font-weight: 500;        /* matches your h3 style */
+  transition: color 0.2s ease;
+}
+
+.project-card a:hover {
+  color: #007bff;          /* optional: blue highlight on hover */
+}
+
+
+
+/* Decorative side art */
+.side-art {
+  position: absolute;        /* anchored to viewport */
+  top: 120px;             /* starts just below navbar */
+  height: 65%;            /* smaller, doesn’t fill entire page */
+  width: auto;            /* keep aspect ratio */
+  opacity: 1;          /* more visible but not too strong */
+  z-index: -1;            /* behind text */
+  pointer-events: none;   /* prevent blocking clicks */
+  object-fit: contain;    /* keep proportions */
+}
+
+.side-art.left {
+  left: 10px;             /* slight padding from edge */
+}
+
+.side-art.right {
+  right: 10px;            /* slight padding from edge */
+}
+
